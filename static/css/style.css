@@ -1,6 +1,9 @@
-html, body {
+body {
     font-family: Arial;
     font-size: 16px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,24 +13,34 @@ html, body {
     flex-grow: 1;
 }
 
-h1 {
+.title {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-}
-
-.title {
-    text-align: center;
     padding-top: 40px;
     font-size: 2.5rem;
+    color: #535353;
 }
 
 .icon-image {
     width: 150px;
-    text-align: center;
 }
 
 form div {
     margin: 10px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.upload {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: 16px;
 }
 
 .button {
@@ -38,12 +51,8 @@ form div {
     padding: 8px;
 }
 
-input {
-    border: 1px solid #cccccc;
-    padding: 8px;
-    margin-bottom: 5px;
-}
-
 footer {
+    margin-top: 130px;
     text-align: center;
+    font-size: 18px;
 }
