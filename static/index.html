@@ -2,35 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App</title>
 
+    <link rel="icon" type="image/png" href="./images/download.png.crdownload">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<div class="container">
-    <h1 class="title">Загрузка файлов на сервер</h1>
-    <img src="./images/upload.jpg" alt="" class="icon-image">
-    <hr>
-    <form>
-        <div>
-            <input class="hidden" type="file">
-        </div>
-        <div>
-            <input type="text" name="image" class="upload" placeholder="Название">
-            <input type="hidden" name="imagename" class="upload" value="">
-        </div>
-        <div>
-            <label for="upload" class="button">Submit</label>
-        </div>
-    </form>
-    <footer>
+    <div class="container">
+        <h1 class="title">Uploading files to the server</h1>
+        <img src="./images/upload.jpg" class="icon-image">
         <hr>
-        <p>&copy; 2021</p>
-    </footer>
-</div>
-
-<script src="./js/upload.js"></script>
+        <form>
+            <div>
+                <input class="hidden" id="upload" type="file">
+            </div>
+            <div>
+                <input type="text" name="image" class="uploads" placeholder="File name">
+                <input type="hidden" name="imagename" class="uploads" value="">
+            </div>
+            <div>
+                <label for="upload" class="button">Submit</label>
+            </div>
+        </form>
+        <footer>
+            <hr>
+            <p>&copy; 2021</p>
+        </footer>
+    </div>
+    
+    <script src="./js/upload.js"></script>
 </body>
 </html>
